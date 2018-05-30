@@ -1,0 +1,790 @@
+API - /user/login
+METHOD - Post
+REQ -  { phoneNumber:7691923477
+		password:Abc@1234 }
+RES - {
+    "message": "success",
+    "data": {
+        "token": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwicm9sZSI6MSwiZXhwIjoxNTI3NTQzNDMxLCJjcmVhdGVkVGltZSI6MTUyNjMzMzgzMX0.zUVxd7wx42VftYpx8tdlAo13RpycGNKoHu0vQaqQXDw",
+        "name": "Vivek Kumar Vishwakarma",
+        "_id": 1,
+        "scorePoint": 0,
+        "dateTime": "2018-05-14T00:02:03.456Z",
+        "startQuize": false,
+        "roles": 1,
+        "phoneNumber": "7691923477"
+    },
+    "res": true
+}
+
+
+
+----------------------------------
+
+API - /user/userActive
+METHOD - Post
+REQ -  { playerId:2 }
+RES - {
+    "message": "success",
+    "data": {},
+    "res": true
+}
+
+-----------------------------------
+
+API - /user/userInactive
+METHOD - Post
+REQ -  { playerId:2 }
+RES - {
+    "message": "success",
+    "data": {},
+    "res": true
+}
+
+-----------------------------------
+
+API - /user/endQuize
+METHOD - Post
+REQ -  { playerId:2 }
+RES - {
+    "message": "success",
+    "data": {},
+    "res": true
+}
+
+-----------------------------------
+
+API - /user/correctAnswer
+METHOD - Post
+REQ -  { playerId:2,
+		questionId:2,
+		answerId:2
+}
+RES - {
+    "message": "success",
+    "data": {},
+    "res": true
+}
+
+-----------------------------------
+
+API - /user/playerList
+METHOD - get
+RES - {
+    "message": "success",
+    "data": [
+        {
+            "name": "Sunil Kumar",
+            "scorePoint": 4,
+            "roles": 2,
+            "startQuize": false,
+            "activeStatus": false,
+            "assignQuestion": [
+                {
+                    "available": false,
+                    "answer": [
+                        {
+                            "_id": "5afaface958bcc262ccd5b8c",
+                            "answerId": 1,
+                            "answerString": "temperature"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b8b",
+                            "answerId": 2,
+                            "answerString": "pressure"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b8a",
+                            "answerId": 3,
+                            "answerString": "energy"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b89",
+                            "answerId": 4,
+                            "answerString": "heat"
+                        }
+                    ],
+                    "_id": 4,
+                    "questions": "Joule is the unit of",
+                    "correctAnswer": 3
+                },
+                {
+                    "available": false,
+                    "answer": [
+                        {
+                            "_id": "5afaface958bcc262ccd5b88",
+                            "answerId": 1,
+                            "answerString": "Kerala"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b87",
+                            "answerId": 2,
+                            "answerString": "Karnataka"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b86",
+                            "answerId": 3,
+                            "answerString": "Orissa"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b85",
+                            "answerId": 4,
+                            "answerString": "Tamil Nadu"
+                        }
+                    ],
+                    "_id": 8,
+                    "questions": "Kathakali, Mohiniatam and Ottamthullal are the famous dances of",
+                    "correctAnswer": 1
+                },
+                {
+                    "available": false,
+                    "answer": [
+                        {
+                            "_id": "5afaface958bcc262ccd5b84",
+                            "answerId": 1,
+                            "answerString": "first woman IAS officer"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b83",
+                            "answerId": 2,
+                            "answerString": "first woman IPS officer"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b82",
+                            "answerId": 3,
+                            "answerString": "first woman advocate"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b81",
+                            "answerId": 4,
+                            "answerString": "first woman judge"
+                        }
+                    ],
+                    "_id": 18,
+                    "questions": "Kiran Bedi is",
+                    "correctAnswer": 2
+                },
+                {
+                    "available": false,
+                    "answer": [
+                        {
+                            "_id": "5afaface958bcc262ccd5b80",
+                            "answerId": 1,
+                            "answerString": "Gomti"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b7f",
+                            "answerId": 2,
+                            "answerString": "Yamuna"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b7e",
+                            "answerId": 3,
+                            "answerString": "Satluj"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b7d",
+                            "answerId": 4,
+                            "answerString": "Godavari"
+                        }
+                    ],
+                    "_id": 17,
+                    "questions": "Ludhiana is situated on ____ river.",
+                    "correctAnswer": 3
+                },
+                {
+                    "available": false,
+                    "answer": [
+                        {
+                            "_id": "5afaface958bcc262ccd5b7c",
+                            "answerId": 1,
+                            "answerString": "Bhopal"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b7b",
+                            "answerId": 2,
+                            "answerString": "Gwalior"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b7a",
+                            "answerId": 3,
+                            "answerString": "Karnal"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b79",
+                            "answerId": 4,
+                            "answerString": "Patiala"
+                        }
+                    ],
+                    "_id": 13,
+                    "questions": "Lakshmibai National College of Physical Education is located at",
+                    "correctAnswer": 2
+                }
+            ],
+            "assignAnswer": [
+                {
+                    "_id": "5afb08936c2c0322c85dbd98",
+                    "questionId": 1,
+                    "answerId": 2,
+                    "correctAnswer": false
+                }
+            ],
+            "_id": 2,
+            "phoneNumber": "7691923478",
+            "password": "627564ccc487f52b22e044a3e3a1fe262de35d98b5c8f48c5832384b15ebba1608ddbc129836987327a918cbfd6c716d328c57a294fbc90730a003520706efc4",
+            "salt": "szoajfmrdp8g9z3cmj410a8vk0r688j",
+            "dateTime": "2018-05-14T00:02:03.456Z"
+        },
+        {
+            "name": "Vishal Kumar",
+            "scorePoint": 9,
+            "roles": 2,
+            "startQuize": false,
+            "activeStatus": true,
+            "assignQuestion": [],
+            "assignAnswer": [],
+            "_id": 3,
+            "phoneNumber": "7691923485",
+            "password": "627564ccc487f52b22e044a3e3a1fe262de35d98b5c8f48c5832384b15ebba1608ddbc129836987327a918cbfd6c716d328c57a294fbc90730a003520706efc4",
+            "salt": "szoajfmrdp8g9z3cmj410a8vk0r688j",
+            "dateTime": "2018-05-14T00:02:03.456Z"
+        },
+        {
+            "name": "Vijay",
+            "scorePoint": 0,
+            "roles": 2,
+            "startQuize": false,
+            "activeStatus": true,
+            "assignQuestion": [],
+            "assignAnswer": [],
+            "_id": 4,
+            "phoneNumber": "7691923445",
+            "password": "627564ccc487f52b22e044a3e3a1fe262de35d98b5c8f48c5832384b15ebba1608ddbc129836987327a918cbfd6c716d328c57a294fbc90730a003520706efc4",
+            "salt": "szoajfmrdp8g9z3cmj410a8vk0r688j",
+            "dateTime": "2018-05-14T00:02:03.456Z"
+        },
+        {
+            "name": "Abhishek",
+            "scorePoint": 2,
+            "roles": 2,
+            "startQuize": false,
+            "activeStatus": true,
+            "assignQuestion": [],
+            "assignAnswer": [],
+            "_id": 5,
+            "phoneNumber": "7691923496",
+            "password": "627564ccc487f52b22e044a3e3a1fe262de35d98b5c8f48c5832384b15ebba1608ddbc129836987327a918cbfd6c716d328c57a294fbc90730a003520706efc4",
+            "salt": "szoajfmrdp8g9z3cmj410a8vk0r688j",
+            "dateTime": "2018-05-14T00:02:03.456Z"
+        },
+        {
+            "name": "Prakash",
+            "scorePoint": 10,
+            "roles": 2,
+            "startQuize": false,
+            "activeStatus": true,
+            "assignQuestion": [],
+            "assignAnswer": [],
+            "_id": 6,
+            "phoneNumber": "7691923487",
+            "password": "627564ccc487f52b22e044a3e3a1fe262de35d98b5c8f48c5832384b15ebba1608ddbc129836987327a918cbfd6c716d328c57a294fbc90730a003520706efc4",
+            "salt": "szoajfmrdp8g9z3cmj410a8vk0r688j",
+            "dateTime": "2018-05-14T00:02:03.456Z"
+        }
+    ],
+    "res": true
+}
+
+-----------------------------------
+
+API - /user/questionList?playerId=3
+METHOD - get
+RES - {
+    "message": "success",
+    "data": [
+        {
+            "_id": 4,
+            "questions": "Joule is the unit of",
+            "answer": [
+                {
+                    "answerId": 1,
+                    "answerString": "temperature"
+                },
+                {
+                    "answerId": 2,
+                    "answerString": "pressure"
+                },
+                {
+                    "answerId": 3,
+                    "answerString": "energy"
+                },
+                {
+                    "answerId": 4,
+                    "answerString": "heat"
+                }
+            ],
+            "correctAnswer": 3,
+            "available": false
+        },
+        {
+            "_id": 15,
+            "questions": "Kathak, Nauntanki, Jhora and Kajri are the important dances of",
+            "answer": [
+                {
+                    "answerId": 1,
+                    "answerString": "Uttaranchal"
+                },
+                {
+                    "answerId": 2,
+                    "answerString": "Uttar Pradesh"
+                },
+                {
+                    "answerId": 3,
+                    "answerString": "Jharkhand"
+                },
+                {
+                    "answerId": 4,
+                    "answerString": "Chhattisgarh"
+                }
+            ],
+            "correctAnswer": 2,
+            "available": false
+        },
+        {
+            "_id": 16,
+            "questions": "Lance Armstrong, a sportsperson of international repute, belongs to which of the following countries?",
+            "answer": [
+                {
+                    "answerId": 1,
+                    "answerString": "USA"
+                },
+                {
+                    "answerId": 2,
+                    "answerString": "Ukraine"
+                },
+                {
+                    "answerId": 3,
+                    "answerString": "Spain"
+                },
+                {
+                    "answerId": 4,
+                    "answerString": "Brazil"
+                }
+            ],
+            "correctAnswer": 1,
+            "available": false
+        },
+        {
+            "_id": 12,
+            "questions": "Modern Indo-Aryan languages are based on an ancient language called",
+            "answer": [
+                {
+                    "answerId": 1,
+                    "answerString": "Hindi"
+                },
+                {
+                    "answerId": 2,
+                    "answerString": "Sanskrit"
+                },
+                {
+                    "answerId": 3,
+                    "answerString": "Kannada"
+                },
+                {
+                    "answerId": 4,
+                    "answerString": "Tamil"
+                }
+            ],
+            "correctAnswer": 2,
+            "available": false
+        },
+        {
+            "_id": 9,
+            "questions": "Jaspal Rana is associated with which of the following games?",
+            "answer": [
+                {
+                    "answerId": 1,
+                    "answerString": "Swimming"
+                },
+                {
+                    "answerId": 2,
+                    "answerString": "Archery"
+                },
+                {
+                    "answerId": 3,
+                    "answerString": "Shooting"
+                },
+                {
+                    "answerId": 4,
+                    "answerString": "Weightlifting"
+                }
+            ],
+            "correctAnswer": 3,
+            "available": false
+        }
+    ],
+    "res": true
+}
+
+-----------------------------------
+
+API - /user/leaderBoard
+METHOD - get
+RES - {
+    "message": "success",
+    "data": [
+        {
+            "_id": 6,
+            "name": "Prakash",
+            "phoneNumber": "7691923487",
+            "password": "627564ccc487f52b22e044a3e3a1fe262de35d98b5c8f48c5832384b15ebba1608ddbc129836987327a918cbfd6c716d328c57a294fbc90730a003520706efc4",
+            "salt": "szoajfmrdp8g9z3cmj410a8vk0r688j",
+            "scorePoint": 10,
+            "roles": 2,
+            "dateTime": "2018-05-14T00:02:03.456Z",
+            "startQuize": false,
+            "activeStatus": true
+        },
+        {
+            "_id": 3,
+            "name": "Vishal Kumar",
+            "phoneNumber": "7691923485",
+            "password": "627564ccc487f52b22e044a3e3a1fe262de35d98b5c8f48c5832384b15ebba1608ddbc129836987327a918cbfd6c716d328c57a294fbc90730a003520706efc4",
+            "salt": "szoajfmrdp8g9z3cmj410a8vk0r688j",
+            "scorePoint": 9,
+            "roles": 2,
+            "dateTime": "2018-05-14T00:02:03.456Z",
+            "startQuize": true,
+            "activeStatus": true,
+            "assignQuestion": [
+                {
+                    "available": false,
+                    "_id": 4,
+                    "questions": "Joule is the unit of",
+                    "answer": [
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf394b",
+                            "answerId": 1,
+                            "answerString": "temperature"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf394a",
+                            "answerId": 2,
+                            "answerString": "pressure"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3949",
+                            "answerId": 3,
+                            "answerString": "energy"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3948",
+                            "answerId": 4,
+                            "answerString": "heat"
+                        }
+                    ],
+                    "correctAnswer": 3
+                },
+                {
+                    "available": false,
+                    "_id": 15,
+                    "questions": "Kathak, Nauntanki, Jhora and Kajri are the important dances of",
+                    "answer": [
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3947",
+                            "answerId": 1,
+                            "answerString": "Uttaranchal"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3946",
+                            "answerId": 2,
+                            "answerString": "Uttar Pradesh"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3945",
+                            "answerId": 3,
+                            "answerString": "Jharkhand"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3944",
+                            "answerId": 4,
+                            "answerString": "Chhattisgarh"
+                        }
+                    ],
+                    "correctAnswer": 2
+                },
+                {
+                    "available": false,
+                    "_id": 16,
+                    "questions": "Lance Armstrong, a sportsperson of international repute, belongs to which of the following countries?",
+                    "answer": [
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3943",
+                            "answerId": 1,
+                            "answerString": "USA"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3942",
+                            "answerId": 2,
+                            "answerString": "Ukraine"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3941",
+                            "answerId": 3,
+                            "answerString": "Spain"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3940",
+                            "answerId": 4,
+                            "answerString": "Brazil"
+                        }
+                    ],
+                    "correctAnswer": 1
+                },
+                {
+                    "available": false,
+                    "_id": 12,
+                    "questions": "Modern Indo-Aryan languages are based on an ancient language called",
+                    "answer": [
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf393f",
+                            "answerId": 1,
+                            "answerString": "Hindi"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf393e",
+                            "answerId": 2,
+                            "answerString": "Sanskrit"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf393d",
+                            "answerId": 3,
+                            "answerString": "Kannada"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf393c",
+                            "answerId": 4,
+                            "answerString": "Tamil"
+                        }
+                    ],
+                    "correctAnswer": 2
+                },
+                {
+                    "available": false,
+                    "_id": 9,
+                    "questions": "Jaspal Rana is associated with which of the following games?",
+                    "answer": [
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf393b",
+                            "answerId": 1,
+                            "answerString": "Swimming"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf393a",
+                            "answerId": 2,
+                            "answerString": "Archery"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3939",
+                            "answerId": 3,
+                            "answerString": "Shooting"
+                        },
+                        {
+                            "_id": "5afbf6b1cdac1c09c4cf3938",
+                            "answerId": 4,
+                            "answerString": "Weightlifting"
+                        }
+                    ],
+                    "correctAnswer": 3
+                }
+            ]
+        },
+        {
+            "_id": 2,
+            "name": "Sunil Kumar",
+            "phoneNumber": "7691923478",
+            "password": "627564ccc487f52b22e044a3e3a1fe262de35d98b5c8f48c5832384b15ebba1608ddbc129836987327a918cbfd6c716d328c57a294fbc90730a003520706efc4",
+            "salt": "szoajfmrdp8g9z3cmj410a8vk0r688j",
+            "scorePoint": 4,
+            "roles": 2,
+            "dateTime": "2018-05-14T00:02:03.456Z",
+            "startQuize": false,
+            "activeStatus": false,
+            "assignQuestion": [
+                {
+                    "available": false,
+                    "_id": 4,
+                    "questions": "Joule is the unit of",
+                    "answer": [
+                        {
+                            "_id": "5afaface958bcc262ccd5b8c",
+                            "answerId": 1,
+                            "answerString": "temperature"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b8b",
+                            "answerId": 2,
+                            "answerString": "pressure"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b8a",
+                            "answerId": 3,
+                            "answerString": "energy"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b89",
+                            "answerId": 4,
+                            "answerString": "heat"
+                        }
+                    ],
+                    "correctAnswer": 3
+                },
+                {
+                    "available": false,
+                    "_id": 8,
+                    "questions": "Kathakali, Mohiniatam and Ottamthullal are the famous dances of",
+                    "answer": [
+                        {
+                            "_id": "5afaface958bcc262ccd5b88",
+                            "answerId": 1,
+                            "answerString": "Kerala"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b87",
+                            "answerId": 2,
+                            "answerString": "Karnataka"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b86",
+                            "answerId": 3,
+                            "answerString": "Orissa"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b85",
+                            "answerId": 4,
+                            "answerString": "Tamil Nadu"
+                        }
+                    ],
+                    "correctAnswer": 1
+                },
+                {
+                    "available": false,
+                    "_id": 18,
+                    "questions": "Kiran Bedi is",
+                    "answer": [
+                        {
+                            "_id": "5afaface958bcc262ccd5b84",
+                            "answerId": 1,
+                            "answerString": "first woman IAS officer"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b83",
+                            "answerId": 2,
+                            "answerString": "first woman IPS officer"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b82",
+                            "answerId": 3,
+                            "answerString": "first woman advocate"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b81",
+                            "answerId": 4,
+                            "answerString": "first woman judge"
+                        }
+                    ],
+                    "correctAnswer": 2
+                },
+                {
+                    "available": false,
+                    "_id": 17,
+                    "questions": "Ludhiana is situated on ____ river.",
+                    "answer": [
+                        {
+                            "_id": "5afaface958bcc262ccd5b80",
+                            "answerId": 1,
+                            "answerString": "Gomti"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b7f",
+                            "answerId": 2,
+                            "answerString": "Yamuna"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b7e",
+                            "answerId": 3,
+                            "answerString": "Satluj"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b7d",
+                            "answerId": 4,
+                            "answerString": "Godavari"
+                        }
+                    ],
+                    "correctAnswer": 3
+                },
+                {
+                    "available": false,
+                    "_id": 13,
+                    "questions": "Lakshmibai National College of Physical Education is located at",
+                    "answer": [
+                        {
+                            "_id": "5afaface958bcc262ccd5b7c",
+                            "answerId": 1,
+                            "answerString": "Bhopal"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b7b",
+                            "answerId": 2,
+                            "answerString": "Gwalior"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b7a",
+                            "answerId": 3,
+                            "answerString": "Karnal"
+                        },
+                        {
+                            "_id": "5afaface958bcc262ccd5b79",
+                            "answerId": 4,
+                            "answerString": "Patiala"
+                        }
+                    ],
+                    "correctAnswer": 2
+                }
+            ],
+            "assignAnswer": [
+                {
+                    "_id": "5afb08936c2c0322c85dbd98",
+                    "questionId": 1,
+                    "answerId": 2,
+                    "correctAnswer": false
+                }
+            ]
+        },
+        {
+            "_id": 5,
+            "name": "Abhishek",
+            "phoneNumber": "7691923496",
+            "password": "627564ccc487f52b22e044a3e3a1fe262de35d98b5c8f48c5832384b15ebba1608ddbc129836987327a918cbfd6c716d328c57a294fbc90730a003520706efc4",
+            "salt": "szoajfmrdp8g9z3cmj410a8vk0r688j",
+            "scorePoint": 2,
+            "roles": 2,
+            "dateTime": "2018-05-14T00:02:03.456Z",
+            "startQuize": false,
+            "activeStatus": true
+        },
+        {
+            "_id": 4,
+            "name": "Vijay",
+            "phoneNumber": "7691923445",
+            "password": "627564ccc487f52b22e044a3e3a1fe262de35d98b5c8f48c5832384b15ebba1608ddbc129836987327a918cbfd6c716d328c57a294fbc90730a003520706efc4",
+            "salt": "szoajfmrdp8g9z3cmj410a8vk0r688j",
+            "scorePoint": 0,
+            "roles": 2,
+            "dateTime": "2018-05-14T00:02:03.456Z",
+            "startQuize": false,
+            "activeStatus": true
+        }
+    ],
+    "res": true
+}
